@@ -22,17 +22,27 @@ nav {
   background-color: black;
   z-index: 999;
 }
-
-.logo a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 1.3rem;
-  font-weight: normal;
+/* Add to your existing logo styles */
+.logo h1 a {
+    text-decoration: none;
+    color: whitesmoke;
+    white-space: nowrap; /* This is the key property */
+    display: inline-block;
 }
 
-.logo h1 a:hover {
-  color: rgba(198, 198, 198, 0.5);
-  transition: 0.3s;
+/* Mobile-specific adjustment */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 80%; /* Prevent logo from pushing against menu icon */
+    }
+    
+    .logo h1 a {
+        font-size: 1rem; /* Adjust based on your needs */
+    }
+    
+    nav {
+        padding: 15px 20px; /* May need to reduce padding */
+    }
 }
 
 
@@ -76,67 +86,50 @@ nav ul li a:hover {
 }
 
 .menu-icon {
-  display: none;
+    display: none;
+    cursor: pointer;
 }
 
 .menu-icon i {
-  font-size: 30px;
-  color: white;
+    font-size: 30px;
+    color: white;
 }
 
 .menu-icon:hover {
-  color: rgb(245, 245, 245);
+    color: rgb(245, 245, 245);
 }
-
-/* menu transition*/
-nav .logo {
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 2.5s ease, transform 2.5s ease;
-}
-
-nav .nav-link {
-  opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 1s ease 1s, transform 1s ease 1s; /* faster and same delay */
-}
-
-
-body.loaded nav .logo {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-body.loaded nav .nav-link {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 
 @media (max-width: 600px) {
-  nav ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    gap: 0;
-  }
+    nav ul {
+        position: absolute;
+        top: 100%; /* Changed from 70px to 100% */
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9); /* Darker for better visibility */
+        overflow: hidden;
+        gap: 0;
+        transition: max-height 0.5s ease;
+        max-height: 0;
+    }
 
-  nav ul li {
-    padding: 10px;
-  }
+    nav ul li {
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
 
-  .menu-icon {
-    display: block;
-  }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
 
-  #menuList {
-    transition: all 0.5s;
-  }
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
 }
 
 header {
@@ -231,6 +224,29 @@ main {
   font-size: 4vh;
   font-weight: normal;
   text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .main-header ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .main-header ul li {
+        line-height: 1.2;
+    }
+    
+    .main-header ul li:nth-child(2) {
+        font-size: 1.5em; /* Make ∞ slightly larger */
+        line-height: 0.7; /* Reduce space around it */
+        margin: -0.2em 0; /* Pull closer to names */
+    }
 }
 
 .main-welcome {
@@ -321,27 +337,37 @@ main {
 
 
 .ourstory {
-  color: whitesmoke;
-  width: 90%;
-  max-width: 1500px;
-  margin: 4rem auto 0;
-  text-align: center;
-  padding: 2rem 2rem 5rem 2rem;
- 
+    color: whitesmoke;
+    width: 90%;
+    max-width: 1500px;
+    margin: 4rem auto 0;
+    text-align: center;
+    padding: 2rem 2rem 5rem 2rem;
 }
 
 .ourstory h5 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .ourstory p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #e0e0e0;
-  text-align: justify;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+    text-align: justify;
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+    color: #fff;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 
@@ -904,4 +930,6 @@ header {
   color: white;
 }
 
-/* ... (keep all your existing styles below this point) ... */
+/* ... (keep all your existing styles below this point) . */
+
+
