@@ -314,7 +314,71 @@ Thank you for your love and support — don’t forget to RSVP! 💌</a>
         <p><span>Women:</span> Long Gown</p>
     </div>
 </div>
+
+
+<div class="faq-container">
+    <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+    
+    <div class="faq-left">
+        <p class="faq-intro"><span class="faq-presence"> Presence Means the World to Us.</span><br>
+        As we renew our vows and celebrate our journey together, your presence is the most meaningful gift we could ask for.</p>
+        
+        <p class="faq-intro">Since we are currently residing outside the Philippines, we humbly prefer monetary gifts in lieu of physical presents. Your thoughtful contribution will be deeply appreciated as we continue building our life together.</p>
+        
+        <p class="faq-intro">Thank you for your love, support, and kindness.</p>
+        
+        <div class="faq-item">
+            <div class="faq-question">Can I bring a plus one?</div>
+            <div class="faq-answer">Due to limited space, we kindly ask that only those listed on the invitation attend. Please contact us if you have any questions.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Are kids allowed?</div>
+            <div class="faq-answer">We love your little ones! However, this will be an adult-only celebration to allow all guests to relax and enjoy the evening.</div>
+        </div>
+    </div>
+    
+    <div class="faq-right">
+        <div class="faq-item">
+            <div class="faq-question">When and where do I RSVP?</div>
+            <div class="faq-answer">Please RSVP by NOVEMBER, 2025 by clicking the RSVP button in the navigation bar at the top of our website.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Will transportation be provided?</div>
+            <div class="faq-answer">Transportation will not be provided. Guests are encouraged to carpool or arrange private travel.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Who can I contact with questions?</div>
+            <div class="faq-answer">Feel free to reach out to [Name] at [email/phone number] if you need any help or clarification.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is there car parking available?</div>
+            <div class="faq-answer">Yes! The venue offers ample parking within its premises, so guests can conveniently park on-site.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Can I take photos during the ceremony?</div>
+            <div class="faq-answer">We're having an unplugged ceremony. Please keep phones and cameras away during the vows. We'll share official photos after!</div>
+        </div>
+    </div>
+</div>
  
+
+<!-- RSVP-->
+  <div class="rsvp-container">
+    <div class="rsvp-header">
+        <h2>RSVP</h2>
+        <p>We can't wait to celebrate with you!</p>
+    </div>
+    <div class="rsvp-form">
+        <!-- Replace with your Google Form embed code -->
+<iframe src="https://forms.gle/cdFJ6NMq1JtDnmpU6" frameborder="0" marginheight="0" marginwidth="0">></iframe>                
+    </div>
+</div>
+
     </main>
 
 
@@ -718,6 +782,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     observer.observe(dressCodeSection);
+});
+
+// FAQ
+
+document.addEventListener('DOMContentLoaded', function() {
+    const faqLeft = document.querySelector('.faq-left');
+    const faqRight = document.querySelector('.faq-right');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(faqLeft);
+    observer.observe(faqRight);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const rsvp = document.querySelector('.rsvp-container');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(rsvp);
 });
 </script>
 
