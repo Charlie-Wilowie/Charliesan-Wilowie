@@ -79,7 +79,7 @@ Thank you for your love and support — don’t forget to RSVP! 💌</a>
         </div>
 
         <div class="ourstory" id="ourstory">
-    <h5>HOW WE MET</h5>
+    <h5 class="head-title">HOW WE MET</h5>
     <p id="typed-text"></p> <!-- Changed from direct text to empty element -->
 </div>
 
@@ -166,8 +166,9 @@ Thank you for your love and support — don’t forget to RSVP! 💌</a>
 
     <div class="group"><span>
       <h1>BRIDE'S PARENTS</h1>
-      <p>LORENA BAUTISTA</p>
       <p>ALAN BAUTISTA</p>
+      <p>LORENA BAUTISTA</p>
+     
     </span></div>
 
     <div class="group"><span>
@@ -218,7 +219,7 @@ Thank you for your love and support — don’t forget to RSVP! 💌</a>
       <p>JEFFREY &infin; MARIA GONZALES</p>
       <p>ADONIS  &infin; MICHELLE GARCIA</p>
       <p>NOEl  &infin; CLAUDETTE MACAPAGAL</p>
-      <p>Rozen Manansala & Marciano Sunga</p>
+      <p>Marciano Sunga & Rozen Manansala </p>
       <p>Richard Bautista & Emelita Manansala</p>
       <p>Esmeralda Flores & Imelda Albano & Florencia Baluyut</p>
     </span></div>
@@ -259,7 +260,7 @@ Thank you for your love and support — don’t forget to RSVP! 💌</a>
          <!--end of entourage-->
           <!--Wedding Details-->
 
-            <h1 >WEDDING DETAILS</h1>
+            <h1 class="head-title head-title-style">WEDDING DETAILS</h1>
 
             <div class="timeline">
 
@@ -303,7 +304,17 @@ Thank you for your love and support — don’t forget to RSVP! 💌</a>
         
          </div>
 
-         
+<div class="dress-code">
+    <img src="img/dress code.png" alt="Dress Code Illustration">
+    <div class="dress-code-details">
+        <h2>DRESS CODE</h2>
+        <p><span>FORMAL ATTIRE REQUIRED.</span> We kindly ask all guests to wear formal clothing in cream only. Please choose attire that ensures both elegance and comfort.</p>
+        <p><b>COLOR GUIDE:</b> CREAM</p>
+        <p><span>Men:</span> Suit or Long Sleeves with Black Trousers</p>
+        <p><span>Women:</span> Long Gown</p>
+    </div>
+</div>
+ 
     </main>
 
 
@@ -674,6 +685,40 @@ window.addEventListener('load', () => {
 // end of animation
 
 
+// DRESS CODE
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Simple fade-in animation
+    const dressCodeSection = document.querySelector('.dress-code');
+    const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                fadeInObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    fadeInObserver.observe(dressCodeSection);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dressCodeSection = document.querySelector('.dress-code');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { 
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px' // Triggers when 100px from bottom of viewport
+    });
+    
+    observer.observe(dressCodeSection);
+});
 </script>
 
 </body>

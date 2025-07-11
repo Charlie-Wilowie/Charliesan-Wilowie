@@ -345,7 +345,7 @@ main {
     padding: 2rem 2rem 5rem 2rem;
 }
 
-.ourstory h5 {
+.ourstory .head-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -627,7 +627,10 @@ main {
 
 
 
-
+.head-title-style{
+text-align: center;
+padding: 5rem 0 3rem 0;
+}
 
   .timeline {
       position: relative;
@@ -933,3 +936,246 @@ header {
 /* ... (keep all your existing styles below this point) . */
 
 
+/* DRESS-CODE */
+
+.dress-code {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.4s ease-out;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+}
+
+.dress-code.visible {
+    opacity: 1;
+}
+
+.dress-code img {
+    flex: 0 0 45%;
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    aspect-ratio: 4/5;
+    filter: sepia(10%) brightness(90%) contrast(110%);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dress-code:hover img {
+    filter: sepia(5%) brightness(95%) contrast(105%);
+    transform: scale(0.98);
+}
+
+.dress-code-details {
+    flex: 1;
+    padding: 1rem;
+}
+
+.dress-code-details h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.dress-code-details h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #FFFDD0, transparent);
+}
+
+.dress-code-details p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d0d0d0;
+    font-weight: 300;
+}
+
+.dress-code-details span {
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+.dress-code {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    overflow: hidden; /* For entrance animations */
+}
+
+.dress-code img {
+    flex: 0 0 45%;
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    aspect-ratio: 4/5;
+    filter: sepia(10%) brightness(90%) contrast(110%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%) rotateY(90deg);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dress-code.visible img {
+    transform: translateX(0) rotateY(0deg);
+    opacity: 1;
+}
+
+.dress-code-details {
+    flex: 1;
+    padding: 1rem;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+}
+
+.dress-code.visible .dress-code-details {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Rest of your existing styles... */
+.dress-code-details h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.dress-code-details h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #FFFDD0, transparent);
+    transition: width 0.5s ease;
+}
+
+.dress-code:hover .dress-code-details h2::after {
+    width: 100px;
+}
+
+.dress-code-details p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d0d0d0;
+    font-weight: 300;
+}
+.dress-code img {
+    /* Existing styles... */
+    transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1); /* Slower duration (1.5s) and smoother easing */
+}
+
+.dress-code-details {
+    /* Existing styles... */
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.5s; /* Slower duration (1.2s) with longer delay (0.5s) */
+}
+
+/* Optional: Add these for even smoother motion */
+.dress-code {
+    perspective: 1000px; /* Adds depth for the flip */
+}
+
+.dress-code img {
+    transform-style: preserve-3d; /* Better 3D rendering */
+    transform: translateX(-100%) rotateY(90deg) scale(0.9); /* Start slightly smaller */
+}
+
+.dress-code.visible img {
+    transform: translateX(0) rotateY(0deg) scale(1); /* End at normal size */
+}
+.dress-code-details span {
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .dress-code {
+        gap: 40px;
+        padding: 2.5rem;
+    }
+    
+    .dress-code img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .dress-code {
+        flex-direction: column;
+        gap: 30px;
+        padding: 2rem;
+    }
+    
+    .dress-code img {
+        flex: 1 1 100%;
+        max-width: 100%;
+        max-height: 500px;
+        aspect-ratio: unset;
+    }
+    
+    .dress-code-details {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .dress-code-details h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .dress-code {
+        padding: 1.5rem;
+    }
+    
+    .dress-code img {
+        max-height: 400px;
+    }
+    
+    .dress-code-details h2 {
+        font-size: 1.8rem;
+    }
+    
+    .dress-code-details p {
+        font-size: 1rem;
+    }
+}
