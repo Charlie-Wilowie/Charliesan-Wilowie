@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Charlie & Wilowie Wedding</title>
 </head>
 <body>
-   <!--navbar -->
+   <!-- Main Navigation -->
     <nav>
         <div class="logo">
            <h1><a href="#">CHARLIE &infin; WILOWIE</a></h1>
@@ -28,26 +28,25 @@
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
-    <!--end of navbar-->
+    <!-- End of Navigation -->
 
-    <!--countdown and header -->
+    <!-- Hero Section with Countdown -->
     <header>
         <div class="countdown-container">
-    <h1>Counting Down to Love</h1>
-    <div class="countdown">
-      <div><span class="number" id="days">0</span><span class="label">Days</span></div>
-      <div><span class="number" id="hours">0</span><span class="label">Hours</span></div>
-      <div><span class="number" id="minutes">0</span><span class="label">Minutes</span></div>
-      <div><span class="number" id="seconds">0</span><span class="label">Seconds</span></div>
-    </div>
-    <p>20 DECEMBER 2025</p>
-  </div>   
+            <h1>Counting Down to Love</h1>
+            <div class="countdown">
+              <div><span class="number" id="days">0</span><span class="label">Days</span></div>
+              <div><span class="number" id="hours">0</span><span class="label">Hours</span></div>
+              <div><span class="number" id="minutes">0</span><span class="label">Minutes</span></div>
+              <div><span class="number" id="seconds">0</span><span class="label">Seconds</span></div>
+            </div>
+            <p>20 DECEMBER 2025</p>
+        </div>   
     </header>
-     <!--end of countdown and header -->
+    <!-- End of Hero Section -->
 
     <main>
-
-        <!--our name, carousel, welcome message, our story-->
+        <!-- Couple Name Display -->
         <div class="main-header">
             <ul>
                 <li>Charliesan Manansala</li>
@@ -56,766 +55,641 @@
             </ul>
         </div>
 
-<div class="carousel-wrapper">
-  <div class="coverflow-carousel">
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="1"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="2"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="3"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="4"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="5"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="2"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="3"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="4"></div>
-    <div class="coverflow-slide"><img src="img/main.jpg" alt="5"></div>
-  </div>
-</div>
+        <!-- Image Carousel -->
+        <div class="carousel-wrapper">
+            <div class="coverflow-carousel">
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 1"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 2"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 3"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 4"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 5"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 6"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 7"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 8"></div>
+                <div class="coverflow-slide"><img src="img/main.jpg" alt="Couple photo 9"></div>
+            </div>
+        </div>
 
-
+        <!-- Welcome Message -->
         <div class="main-welcome">
             <hr class="hr">
-            <a href="#">We’re so excited to celebrate this special moment with you. Here, you’ll find all the details about our big day — from the schedule to travel tips.
-Thank you for your love and support — don’t forget to RSVP! 💌</a>
+            <a href="#">We're so excited to celebrate this special moment with you. Here, you'll find all the details about our big day — from the schedule to travel tips.
+Thank you for your love and support — don't forget to RSVP! 💌</a>
             <hr class="hr">
         </div>
 
+        <!-- Our Story Section -->
         <div class="ourstory" id="ourstory">
-    <h5 class="head-title">HOW WE MET</h5>
-    <p id="typed-text"></p> <!-- Changed from direct text to empty element -->
-</div>
-
-           <div class="details">
-           <div class="gallery-container">
-        <div class="cards-row">
-            <!-- Card 1 -->
-            <div class="card" data-card="1">
-                <div class="card-face card-front">
-                    <img src="img/main.jpg" alt="Photo 1">
-                </div>
-                <div class="card-face card-back">
-                    <img src="img/main2.jpg" alt="Photo 1b">
-                </div>
-            </div>
-            
-            <!-- Repeat for 5 more cards (change image URLs) -->
-            <div class="card" data-card="2">
-                <div class="card-face card-front">
-                    <img src="img/main2.jpg" alt="Photo 2">
-                </div>
-                <div class="card-face card-back">
-                    <img src="img/main.jpg" alt="Photo 2b">
-                </div>
-            </div>
-
-            <div class="card" data-card="2">
-                <div class="card-face card-front">
-                    <img src="img/main2.jpg" alt="Photo 2">
-                </div>
-                <div class="card-face card-back">
-                    <img src="img/main.jpg" alt="Photo 2b">
-                </div>
-            </div>
-
-            <div class="card" data-card="2">
-                <div class="card-face card-front">
-                    <img src="img/main2.jpg" alt="Photo 2">
-                </div>
-                <div class="card-face card-back">
-                    <img src="img/main.jpg" alt="Photo 2b">
-                </div>
-            </div>
-
-            <div class="card" data-card="2">
-                <div class="card-face card-front">
-                    <img src="img/main2.jpg" alt="Photo 2">
-                </div>
-                <div class="card-face card-back">
-                    <img src="img/main.jpg" alt="Photo 2b">
-                </div>
-            </div>
-
-            <div class="card" data-card="2">
-                <div class="card-face card-front">
-                    <img src="img/main2.jpg" alt="Photo 2">
-                </div>
-                <div class="card-face card-back">
-                    <img src="img/main.jpg" alt="Photo 2b">
-                </div>
-            </div>
-            
-            
-            <!-- Cards 3-6 would follow same pattern -->
+            <h5 class="head-title">HOW WE MET</h5>
+            <p id="typed-text"></p>
         </div>
-    </div>
-        <!--end our name, carousel, welcome message, our story-->
-<hr>
-        <!--entourage-->
-    <div class="entourage" id="entourage">
-  <h5>ENTOURAGE</h5>
-  <div class="entourage-grid">
 
-    <div class="group"><span>
-      <h1>OUR LITTLE BRIDE ♥</h1>
-      <p>SANDEE ALRAINE MANANSALA</p>
-    </span></div>
+        <!-- Photo Gallery -->
+        <div class="details">
+            <div class="gallery-container">
+                <div class="cards-row">
+                    <!-- Card 1 -->
+                    <div class="card" data-card="1">
+                        <div class="card-face card-front">
+                            <img src="img/main.jpg" alt="Photo 1">
+                        </div>
+                        <div class="card-face card-back">
+                            <img src="img/main2.jpg" alt="Photo 1b">
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="card" data-card="2">
+                        <div class="card-face card-front">
+                            <img src="img/main2.jpg" alt="Photo 2">
+                        </div>
+                        <div class="card-face card-back">
+                            <img src="img/main.jpg" alt="Photo 2b">
+                        </div>
+                    </div>
 
-    <div class="group"><span>
-      <h1>GROOM'S PARENTS</h1>
-      <p>RANDY MANANSALA</p>
-      <p>SUSANA MANANSALA</p>
-    </span></div>
+                    <!-- Card 3 -->
+                    <div class="card" data-card="3">
+                        <div class="card-face card-front">
+                            <img src="img/main2.jpg" alt="Photo 3">
+                        </div>
+                        <div class="card-face card-back">
+                            <img src="img/main.jpg" alt="Photo 3b">
+                        </div>
+                    </div>
 
-    <div class="group"><span>
-      <h1>BRIDE'S PARENTS</h1>
-      <p>ALAN BAUTISTA</p>
-      <p>LORENA BAUTISTA</p>
-     
-    </span></div>
+                    <!-- Card 4 -->
+                    <div class="card" data-card="4">
+                        <div class="card-face card-front">
+                            <img src="img/main2.jpg" alt="Photo 4">
+                        </div>
+                        <div class="card-face card-back">
+                            <img src="img/main.jpg" alt="Photo 4b">
+                        </div>
+                    </div>
 
-    <div class="group"><span>
-      <h1>BEST MEN</h1>
-      <p>LAURENCE MANANSALA</p>
-      <p>BENEDICK BALUYUT</p>
-    </span></div>
+                    <!-- Card 5 -->
+                    <div class="card" data-card="5">
+                        <div class="card-face card-front">
+                            <img src="img/main2.jpg" alt="Photo 5">
+                        </div>
+                        <div class="card-face card-back">
+                            <img src="img/main.jpg" alt="Photo 5b">
+                        </div>
+                    </div>
 
-    <div class="group"><span>
-      <h1>MAID OF HONOR</h1>
-      <p>CHARLOTE MANANSALA</p>
-      <p>MERRYL LANE BAUTISTA</p>
-    </span></div>
+                    <!-- Card 6 -->
+                    <div class="card" data-card="6">
+                        <div class="card-face card-front">
+                            <img src="img/main2.jpg" alt="Photo 6">
+                        </div>
+                        <div class="card-face card-back">
+                            <img src="img/main.jpg" alt="Photo 6b">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <!-- Entourage Section -->
+            <div class="entourage" id="entourage">
+                <h5>ENTOURAGE</h5>
+                <div class="entourage-grid">
+                    <div class="group"><span>
+                        <h1>OUR LITTLE BRIDE ♥</h1>
+                        <p>SANDEE ALRAINE MANANSALA</p>
+                    </span></div>
 
-    <div class="group"><span>
-      <h1>GROOMSMEN</h1>
-      <p>JALDRAINE BAUTISTA</p>
-      <p>ALDRIN JONH GARCIA</p>
-      <p>DANIEL LUBI</p>
-      <p>CHRISTOPHER DANN MALLARI</p>
-      <p>PAUL SAMSON BALINGIT</p>
-      <p>JONH VINCENT COMPLIDO</p>
-      <p>SHEANNE PABALATE</p>
-      <p>CHRISTIAN ANDREI BAUTISTA</p>
-    </span></div>
+                    <div class="group"><span>
+                        <h1>GROOM'S PARENTS</h1>
+                        <p>RANDY MANANSALA</p>
+                        <p>SUSANA MANANSALA</p>
+                    </span></div>
 
-    <div class="group"><span>
-      <h1>BRIDESMAIDS</h1>
-      <p>MORELLA GUINTO</p>
-      <p>CLARISH ANNE MANANSALA</p>
-      <p>ANGELICA MAE BAUTISTA</p>
-      <p>ROCEL ANN CANILAO</p>
-      <p>RACEL BONIFACIO</p>
-      <p>JERSY RAIN MEMPIN</p>
-      <p>AIRA JOY BONIFACIO</p>
-    </span></div>
+                    <div class="group"><span>
+                        <h1>BRIDE'S PARENTS</h1>
+                        <p>ALAN BAUTISTA</p>
+                        <p>LORENA BAUTISTA</p>
+                    </span></div>
 
-    <div class="group full"><span>
-      <h1>PRINCIPAL SPONSORS</h1>
-      <p>CHRISTOPHER &infin; JENNIFER PAGOBO</p>
-      <p>PACIFICO  JR &infin; ELIZABETH DIZON</p>
-      <p>EDWIN  &infin; LOURDES BAUTISTA</p>
-      <p>MICHAEL  & ROSEMARIE BALINGIT</p>
-      <p>LARRY  &infin; ALONA BALINGIT</p>
-      <p>HAROLD ANGELO   &infin; ANAIS SUNGA</p>
-      <p>DANILO  &infin; CORA HIPOLITO</p>
-      <p>EDGAR  &infin; LULU DE LEON</p>
-      <p>JEFFREY &infin; MARIA GONZALES</p>
-      <p>ADONIS  &infin; MICHELLE GARCIA</p>
-      <p>NOEl  &infin; CLAUDETTE MACAPAGAL</p>
-      <p>Marciano Sunga & Rozen Manansala </p>
-      <p>Richard Bautista & Emelita Manansala</p>
-      <p>Esmeralda Flores & Imelda Albano & Florencia Baluyut</p>
-    </span></div>
+                    <div class="group"><span>
+                        <h1>BEST MEN</h1>
+                        <p>LAURENCE MANANSALA</p>
+                        <p>BENEDICK BALUYUT</p>
+                    </span></div>
 
-    <div class="group"><span>
-      <h1>SECONDARY SPONSORS</h1>
-      <p>JONH PAULO &infin; ARRIANNE HIPOLITO</p>
-      <p>REYMART MANANSALA &infin; MARY ANN DOMINGO</p>
-      <p>JONOVIC &infin; CHERRIE JUCUTAN</p>
-    </span></div>
+                    <div class="group"><span>
+                        <h1>MAID OF HONOR</h1>
+                        <p>CHARLOTE MANANSALA</p>
+                        <p>MERRYL LANE BAUTISTA</p>
+                    </span></div>
 
-    <div class="group"><span>
-      <h1>BEARERS</h1>
-      <p>PRINCE SAIMON – RING</p>
-      <p>ZION GREY – COIN</p>
-      <p>ZAIJAN ZION – BIBLE</p>
-    </span></div>
+                    <div class="group"><span>
+                        <h1>GROOMSMEN</h1>
+                        <p>JALDRAINE BAUTISTA</p>
+                        <p>ALDRIN JONH GARCIA</p>
+                        <p>DANIEL LUBI</p>
+                        <p>CHRISTOPHER DANN MALLARI</p>
+                        <p>PAUL SAMSON BALINGIT</p>
+                        <p>JONH VINCENT COMPLIDO</p>
+                        <p>SHEANNE PABALATE</p>
+                        <p>CHRISTIAN ANDREI BAUTISTA</p>
+                    </span></div>
 
-    <div class="group"><span>
-      <h1>BANNER HOLDERS</h1>
-      <p>SPENCER ELIJAH</p>
-      <p>SKYLER ETHAN</p>
-      <p>LLOYD ALLEN</p>
-      <p>LANCE ANDREW</p>
-    </span></div>
+                    <div class="group"><span>
+                        <h1>BRIDESMAIDS</h1>
+                        <p>MORELLA GUINTO</p>
+                        <p>CLARISH ANNE MANANSALA</p>
+                        <p>ANGELICA MAE BAUTISTA</p>
+                        <p>ROCEL ANN CANILAO</p>
+                        <p>RACEL BONIFACIO</p>
+                        <p>JERSY RAIN MEMPIN</p>
+                        <p>AIRA JOY BONIFACIO</p>
+                    </span></div>
 
-    <div class="group"><span>
-      <h1>FLOWER GIRLS</h1>
-      <p>PRINCESS SHAINA</p>
-      <p>ZARNAIH ZARIA</p>
-      <p>KHRIZEN XIANNEL</p>
-      <p>ARKISHA HIPOLITO</p>
-    </span></div>
+                    <div class="group full"><span>
+                        <h1>PRINCIPAL SPONSORS</h1>
+                        <p>CHRISTOPHER &infin; JENNIFER PAGOBO</p>
+                        <p>PACIFICO  JR &infin; ELIZABETH DIZON</p>
+                        <p>EDWIN  &infin; LOURDES BAUTISTA</p>
+                        <p>MICHAEL  & ROSEMARIE BALINGIT</p>
+                        <p>LARRY  &infin; ALONA BALINGIT</p>
+                        <p>HAROLD ANGELO   &infin; ANAIS SUNGA</p>
+                        <p>DANILO  &infin; CORA HIPOLITO</p>
+                        <p>EDGAR  &infin; LULU DE LEON</p>
+                        <p>JEFFREY &infin; MARIA GONZALES</p>
+                        <p>ADONIS  &infin; MICHELLE GARCIA</p>
+                        <p>NOEl  &infin; CLAUDETTE MACAPAGAL</p>
+                        <p>Marciano Sunga & Rozen Manansala </p>
+                        <p>Richard Bautista & Emelita Manansala</p>
+                        <p>Esmeralda Flores & Imelda Albano & Florencia Baluyut</p>
+                    </span></div>
 
-  </div>
-</div>
+                    <div class="group"><span>
+                        <h1>SECONDARY SPONSORS</h1>
+                        <p>JONH PAULO &infin; ARRIANNE HIPOLITO</p>
+                        <p>REYMART MANANSALA &infin; MARY ANN DOMINGO</p>
+                        <p>JONOVIC &infin; CHERRIE JUCUTAN</p>
+                    </span></div>
 
-         <!--end of entourage-->
-          <!--Wedding Details-->
+                    <div class="group"><span>
+                        <h1>BEARERS</h1>
+                        <p>PRINCE SAIMON – RING</p>
+                        <p>ZION GREY – COIN</p>
+                        <p>ZAIJAN ZION – BIBLE</p>
+                    </span></div>
 
+                    <div class="group"><span>
+                        <h1>BANNER HOLDERS</h1>
+                        <p>SPENCER ELIJAH</p>
+                        <p>SKYLER ETHAN</p>
+                        <p>LLOYD ALLEN</p>
+                        <p>LANCE ANDREW</p>
+                    </span></div>
+
+                    <div class="group"><span>
+                        <h1>FLOWER GIRLS</h1>
+                        <p>PRINCESS SHAINA</p>
+                        <p>ZARNAIH ZARIA</p>
+                        <p>KHRIZEN XIANNEL</p>
+                        <p>ARKISHA HIPOLITO</p>
+                    </span></div>
+                </div>
+            </div>
+
+            <!-- Wedding Details Timeline -->
             <h1 class="head-title head-title-style">WEDDING DETAILS</h1>
-
             <div class="timeline">
+                <div class="timeline-entry right">
+                    <div class="timeline-content">
+                        <h1>CEREMONY</h1>
+                        <time>6:00 PM</time>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus quos quas soluta tenetur ratione dolorum pariatur, qui, commodi quis sint hic voluptas. Ipsa laborum totam, nobis cupiditate ad quas.</p>
+                    </div>
+                </div>
 
-  <div class="timeline-entry right">
-    <div class="timeline-content">
-   
-      <h1>CEREMONY</h1>
-      <time>6:00 PM</time>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus quos quas soluta tenetur ratione dolorum pariatur, qui, commodi quis sint hic voluptas. Ipsa laborum totam, nobis cupiditate ad quas.</p>
-    </div>
-  </div>
+                <div class="timeline-entry left">
+                    <div class="timeline-content">
+                        <h1>COCKTAIL HOUR</h1>
+                        <time>6:00 PM</time>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, placeat optio repellendus ullam enim earum. Magni libero dolorem atque sint corporis debitis modi adipisci tempore nisi officiis, qui, quisquam ea?</p>
+                    </div>
+                </div>
 
-  <div class="timeline-entry left">
-    <div class="timeline-content">
-      
-      <h1>COCKTAIL HOUR</h1>
-      <time>6:00 PM</time>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, placeat optio repellendus ullam enim earum. Magni libero dolorem atque sint corporis debitis modi adipisci tempore nisi officiis, qui, quisquam ea?</p>
-    </div>
-  </div>
+                <div class="timeline-entry right">
+                    <div class="timeline-content">
+                        <h1>RECEPTION</h1>
+                        <time>7:30 PM</time>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at id deleniti ea hic, quasi sapiente sint adipisci, totam error repellat rerum! Similique voluptates temporibus ullam dolor mollitia a enim.</p>
+                    </div>
+                </div>
 
-  <div class="timeline-entry right">
-    <div class="timeline-content">
-      
-      <h1>RECEPTION</h1>
-      <time>7:30 PM</time>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at id deleniti ea hic, quasi sapiente sint adipisci, totam error repellat rerum! Similique voluptates temporibus ullam dolor mollitia a enim.</p>
-    </div>
-  </div>
+                <div class="timeline-entry left">
+                    <div class="timeline-content">
+                        <h1>AFTER PARTY</h1>
+                        <time>11:00 AM</time>
+                        <p>Lorem ipsum dolor si amet consectetur adipisicing elit. Ducimus reprehenderit, pariatur esse magni maxime minima quibusdam vero, dolor harum culpa ratione accusamus ad? Asperiores dolorem, eius nisi ullam voluptate odio.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dress Code Section -->
+            <div class="dress-code">
+                <img src="img/dress code.png" alt="Dress Code Illustration">
+                <div class="dress-code-details">
+                    <h2>DRESS CODE</h2>
+                    <p><span>FORMAL ATTIRE REQUIRED.</span> We kindly ask all guests to wear formal clothing in cream only. Please choose attire that ensures both elegance and comfort.</p>
+                    <p><b>COLOR GUIDE:</b> CREAM</p>
+                    <p><span>Men:</span> Suit or Long Sleeves with Black Trousers</p>
+                    <p><span>Women:</span> Long Gown</p>
+                </div>
+            </div>
 
-  <div class="timeline-entry left">
-    <div class="timeline-content">
-     
-      <h1>AFTER PARTY</h1>
-      <time>11:00 AM</time>
-      <p>Lorem ipsum dolor si amet consectetur adipisicing elit. Ducimus reprehenderit, pariatur esse magni maxime minima quibusdam vero, dolor harum culpa ratione accusamus ad? Asperiores dolorem, eius nisi ullam voluptate odio.</p>
-    </div>
-  </div>
-
-</div>
-        
-         </div>
-
-<div class="dress-code">
-    <img src="img/dress code.png" alt="Dress Code Illustration">
-    <div class="dress-code-details">
-        <h2>DRESS CODE</h2>
-        <p><span>FORMAL ATTIRE REQUIRED.</span> We kindly ask all guests to wear formal clothing in cream only. Please choose attire that ensures both elegance and comfort.</p>
-        <p><b>COLOR GUIDE:</b> CREAM</p>
-        <p><span>Men:</span> Suit or Long Sleeves with Black Trousers</p>
-        <p><span>Women:</span> Long Gown</p>
-    </div>
-</div>
-
-
-<div class="faq-container">
-    <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
-    
-    <div class="faq-left">
-        <p class="faq-intro"><span class="faq-presence"> Presence Means the World to Us.</span><br>
-        As we renew our vows and celebrate our journey together, your presence is the most meaningful gift we could ask for.</p>
-        
-        <p class="faq-intro">Since we are currently residing outside the Philippines, we humbly prefer monetary gifts in lieu of physical presents. Your thoughtful contribution will be deeply appreciated as we continue building our life together.</p>
-        
-        <p class="faq-intro">Thank you for your love, support, and kindness.</p>
-        
-        <div class="faq-item">
-            <div class="faq-question">Can I bring a plus one?</div>
-            <div class="faq-answer">Due to limited space, we kindly ask that only those listed on the invitation attend. Please contact us if you have any questions.</div>
+            <!-- FAQ Section -->
+            <div class="faq-container">
+                <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+                <div class="faq-left">
+                    <p class="faq-intro"><span class="faq-presence"> Presence Means the World to Us.</span><br>
+                    As we renew our vows and celebrate our journey together, your presence is the most meaningful gift we could ask for.</p>
+                    
+                    <p class="faq-intro">Since we are currently residing outside the Philippines, we humbly prefer monetary gifts in lieu of physical presents. Your thoughtful contribution will be deeply appreciated as we continue building our life together.</p>
+                    
+                    <p class="faq-intro">Thank you for your love, support, and kindness.</p>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I bring a plus one?</div>
+                        <div class="faq-answer">Due to limited space, we kindly ask that only those listed on the invitation attend. Please contact us if you have any questions.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Are kids allowed?</div>
+                        <div class="faq-answer">We love your little ones! However, this will be an adult-only celebration to allow all guests to relax and enjoy the evening.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <div class="faq-question">When and where do I RSVP?</div>
+                        <div class="faq-answer">Please RSVP by NOVEMBER, 2025 by clicking the RSVP button in the navigation bar at the top of our website.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Will transportation be provided?</div>
+                        <div class="faq-answer">Transportation will not be provided. Guests are encouraged to carpool or arrange private travel.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Who can I contact with questions?</div>
+                        <div class="faq-answer">Feel free to reach out to [Name] at [email/phone number] if you need any help or clarification.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is there car parking available?</div>
+                        <div class="faq-answer">Yes! The venue offers ample parking within its premises, so guests can conveniently park on-site.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I take photos during the ceremony?</div>
+                        <div class="faq-answer">We're having an unplugged ceremony. Please keep phones and cameras away during the vows. We'll share official photos after!</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RSVP Section -->
+            <div class="rsvp-container">
+                <div class="rsvp-header">
+                    <h2>RSVP</h2>
+                    <p>We can't wait to celebrate with you!</p>
+                </div>
+                <div class="rsvp-form">
+                    <iframe src="https://forms.gle/cdFJ6NMq1JtDnmpU6" frameborder="0" marginheight="0" marginwidth="0">></iframe>                
+                </div>
+            </div>
         </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Are kids allowed?</div>
-            <div class="faq-answer">We love your little ones! However, this will be an adult-only celebration to allow all guests to relax and enjoy the evening.</div>
-        </div>
-    </div>
-    
-    <div class="faq-right">
-        <div class="faq-item">
-            <div class="faq-question">When and where do I RSVP?</div>
-            <div class="faq-answer">Please RSVP by NOVEMBER, 2025 by clicking the RSVP button in the navigation bar at the top of our website.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Will transportation be provided?</div>
-            <div class="faq-answer">Transportation will not be provided. Guests are encouraged to carpool or arrange private travel.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Who can I contact with questions?</div>
-            <div class="faq-answer">Feel free to reach out to [Name] at [email/phone number] if you need any help or clarification.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Is there car parking available?</div>
-            <div class="faq-answer">Yes! The venue offers ample parking within its premises, so guests can conveniently park on-site.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Can I take photos during the ceremony?</div>
-            <div class="faq-answer">We're having an unplugged ceremony. Please keep phones and cameras away during the vows. We'll share official photos after!</div>
-        </div>
-    </div>
-</div>
- 
-
-<!-- RSVP-->
-  <div class="rsvp-container">
-    <div class="rsvp-header">
-        <h2>RSVP</h2>
-        <p>We can't wait to celebrate with you!</p>
-    </div>
-    <div class="rsvp-form">
-        <!-- Replace with your Google Form embed code -->
-<iframe src="https://forms.gle/cdFJ6NMq1JtDnmpU6" frameborder="0" marginheight="0" marginwidth="0">></iframe>                
-    </div>
-</div>
-
     </main>
 
+    <!-- JavaScript -->
+    <script>
+    // ===== NAVIGATION =====
+    // Mobile menu toggle functionality
+    let menuList = document.getElementById("menuList");
+    let menuIcon = document.querySelector('.menu-icon i');
 
-    
-
-<!-- JAVASCRIPT-->
- <script>
- // === MOBILE MENU TOGGLE ===
-let menuList = document.getElementById("menuList");
-let menuIcon = document.querySelector('.menu-icon i');
-
-// Initialize menu state
-function initMenu() {
-    if (window.innerWidth <= 600) {
-        menuList.style.maxHeight = "0px";
-        menuList.style.overflow = "hidden";
-    } else {
-        menuList.style.maxHeight = "none";
-    }
-}
-
-// Toggle menu function
-function toggleMenu() {
-    if (menuList.style.maxHeight === "0px" || !menuList.style.maxHeight) {
-        menuList.style.maxHeight = menuList.scrollHeight + "px";
-    } else {
-        menuList.style.maxHeight = "0px";
-    }
-}
-
-// Close menu when clicking outside
-document.addEventListener('click', function(event) {
-    if (window.innerWidth > 600) return;
-    
-    const isClickInsideMenu = menuList.contains(event.target);
-    const isClickOnIcon = event.target.closest('.menu-icon');
-    
-    if (!isClickInsideMenu && !isClickOnIcon) {
-        menuList.style.maxHeight = "0px";
-    }
-});
-
-//our storry
-
-// Typewriter effect on scroll
-const storyText = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis fugiat eveniet repellat, aut autem, eum quod magni sed veritatis consequuntur assumenda, necessitatibus aliquam. Accusantium laudantium voluptas quidem ipsam aliquid.
-Qui quis explicabo exercitationem amet quidem maxime illum ullam doloribus, hic nihil, dolorem sit, error blanditiis! Unde illum ex similique numquam rerum odio cupiditate, minima ipsum at molestiae temporibus molestias.`;
-
-const typedTextElement = document.getElementById('typed-text');
-let animationStarted = false;
-
-function typeWriter(text, i, cb) {
-    if (i < text.length) {
-        typedTextElement.innerHTML = text.substring(0, i + 1) + '<span class="cursor">|</span>';
-        setTimeout(() => typeWriter(text, i + 1, cb), Math.random() * 30 + 20);
-    } else if (cb) {
-        cb();
-    }
-}
-
-function startTypewriterAnimation() {
-    if (!animationStarted && isElementInViewport(typedTextElement)) {
-        animationStarted = true;
-        typedTextElement.style.visibility = 'visible';
-        typeWriter(storyText, 0, () => {
-            // Animation complete - remove cursor
-            document.querySelector('.cursor').style.display = 'none';
-        });
-    }
-}
-
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom >= 0
-    );
-}
-
-// Initialize
-typedTextElement.style.visibility = 'hidden';
-
-// Start animation on scroll
-window.addEventListener('scroll', startTypewriterAnimation);
-// Also check on load in case element is already visible
-window.addEventListener('load', startTypewriterAnimation);
-
-//end of our story
-
-// Initialize on load and resize
-window.addEventListener('load', initMenu);
-window.addEventListener('resize', initMenu);
-
-// Trigger the animation after page load
-window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
-});
-
-
-  // === CAROUSEL FUNCTIONALITY ===
-  const slides = document.querySelectorAll('.coverflow-slide');
-let currentIndex = Math.floor(slides.length / 2);
-
-function updateCoverflow() {
-  const midIndex = currentIndex;
-  const slideCount = slides.length;
-
-  // Adjust spacing based on screen size
-  const baseX = window.innerWidth < 600 ? 90 : 160;
-
-  slides.forEach((slide, i) => {
-    const offset = i - midIndex;
-    const absOffset = Math.abs(offset);
-
-    if (offset === 0) {
-      // Center (active) slide
-      slide.style.transform = `translateX(0) translateZ(100px) rotateY(0deg) translateY(-50%)`;
-      slide.style.filter = 'brightness(1)';
-      slide.style.zIndex = 10;
-    } else if (offset < 0) {
-      // Left slides
-      slide.style.transform = `translateX(${offset * baseX}px) translateZ(${100 - absOffset * 100}px) rotateY(45deg) translateY(-50%)`;
-      slide.style.filter = 'brightness(0.6)';
-      slide.style.zIndex = 10 - absOffset;
-    } else {
-      // Right slides
-      slide.style.transform = `translateX(${offset * baseX}px) translateZ(${100 - absOffset * 100}px) rotateY(-45deg) translateY(-50%)`;
-      slide.style.filter = 'brightness(0.6)';
-      slide.style.zIndex = 10 - absOffset;
-    }
-  });
-}
-// === FADE + SLIDE IN/OUT ON SCROLL ===
-const carousel = document.querySelector('.coverflow-carousel');
-
-function handleScrollFade() {
-  const rect = carousel.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  // Fade in when the top is visible enough from top to bottom scroll
-  if (rect.top < windowHeight * 1.2 && rect.bottom > windowHeight * 0.4) {
-    carousel.classList.add('visible');
-  } else {
-    carousel.classList.remove('visible');
-  }
-}
-
-window.addEventListener('scroll', handleScrollFade);
-window.addEventListener('load', handleScrollFade);
-
-
-
-function goNext() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateCoverflow();
-}
-
-function goPrev() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateCoverflow();
-}
-
-// Initialize
-updateCoverflow();
-
-// Optional: add navigation with arrow keys
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') goNext();
-  else if (e.key === 'ArrowLeft') goPrev();
-});
-
-// Optional: click slides to move carousel to that slide
-slides.forEach((slide, index) => {
-  slide.addEventListener('click', () => {
-    currentIndex = index;
-    updateCoverflow();
-  });
-});
-
-// === Add drag and touch scroll functionality ===
-let startX = 0;
-let isDown = false;
-
-// Mouse Events
-document.querySelector('.coverflow-carousel').addEventListener('mousedown', (e) => {
-  isDown = true;
-  startX = e.clientX;
-});
-
-document.addEventListener('mouseup', () => isDown = false);
-
-document.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  if (e.clientX - startX > 30) {
-    goPrev();
-    isDown = false;
-  } else if (e.clientX - startX < -30) {
-    goNext();
-    isDown = false;
-  }
-});
-
-// Touch Events
-let touchStartX = 0;
-document.querySelector('.coverflow-carousel').addEventListener('touchstart', (e) => {
-  touchStartX = e.touches[0].clientX;
-});
-
-document.querySelector('.coverflow-carousel').addEventListener('touchmove', (e) => {
-  const deltaX = e.touches[0].clientX - touchStartX;
-  if (deltaX > 50) {
-    goPrev();
-    touchStartX = e.touches[0].clientX;
-  } else if (deltaX < -50) {
-    goNext();
-    touchStartX = e.touches[0].clientX;
-  }
-});
-
-
-
-
-  const daysEl = document.getElementById('days');
-  const hoursEl = document.getElementById('hours');
-  const minutesEl = document.getElementById('minutes');
-  const secondsEl = document.getElementById('seconds');
-
-  // Target wedding date/time
-  const weddingDate = new Date('December 20, 2025 15:00:00').getTime();
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const diff = weddingDate - now;
-
-    if (diff < 0) {
-      // Countdown finished
-      daysEl.textContent = '0';
-      hoursEl.textContent = '0';
-      minutesEl.textContent = '0';
-      secondsEl.textContent = '0';
-      clearInterval(interval);
-      return;
+    function initMenu() {
+        if (window.innerWidth <= 600) {
+            menuList.style.maxHeight = "0px";
+            menuList.style.overflow = "hidden";
+        } else {
+            menuList.style.maxHeight = "none";
+        }
     }
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    function toggleMenu() {
+        if (menuList.style.maxHeight === "0px" || !menuList.style.maxHeight) {
+            menuList.style.maxHeight = menuList.scrollHeight + "px";
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
 
-    daysEl.textContent = days;
-    hoursEl.textContent = hours;
-    minutesEl.textContent = minutes;
-    secondsEl.textContent = seconds;
-  }
-
-  updateCountdown();
-  const interval = setInterval(updateCountdown, 1000);
-
-
-  //photo collage
-   document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.card');
-            
-            // Initialize random flip timers for each card
-            cards.forEach(card => {
-                // Random delay between 1-8 seconds for first flip
-                const initialDelay = Math.random() * 7000 + 1000;
-                
-                setTimeout(() => {
-                    // First flip
-                    card.style.transform = 'rotateY(180deg)';
-                    
-                    // Set up continuous random flipping (every 3-7 seconds)
-                    setInterval(() => {
-                        card.style.transform = card.style.transform === 'rotateY(180deg)' ? 
-                            'rotateY(0deg)' : 'rotateY(180deg)';
-                    }, Math.random() * 4000 + 3000);
-                    
-                }, initialDelay);
-            });
-            
-            // Bonus: Pause animation on hover
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.style.transition = 'none';
-                });
-                
-                card.addEventListener('mouseleave', () => {
-                    card.style.transition = 'transform 1s ease';
-                });
-            });
-        });
-
-  // Sequential heart animation
-const groups = document.querySelectorAll('.group');
-let currentGroupIndex = 0;
-
-function createSingleHeart(group) {
-  const heart = document.createElement('div');
-  heart.classList.add('heart');
-  
-  const colors = ['#e74c3c', '#e67e22', '#f1c40f', '#9b59b6', '#1abc9c', '#3498db'];
-  const color = colors[Math.floor(Math.random() * colors.length)];
-  
-  heart.style.backgroundColor = color;
-  heart.style.setProperty('--heart-color', color);
-  
-  const x = Math.random() * (group.clientWidth - 20);
-  const y = Math.random() * (group.clientHeight - 18);
-  heart.style.left = `${x}px`;
-  heart.style.top = `${y}px`;
-  
-  group.appendChild(heart);
-  
-  heart.addEventListener('animationend', () => {
-    heart.remove();
-    // Move to next group after animation completes
-    currentGroupIndex = (currentGroupIndex + 1) % groups.length;
-    setTimeout(() => createSingleHeart(groups[currentGroupIndex]), 300);
-  });
-}
-
-// Start the sequence when scrolling
-let heartAnimationStarted = false;
-window.addEventListener('scroll', () => {
-  if (!heartAnimationStarted && isElementInViewport(groups[0])) {
-    heartAnimationStarted = true;
-    createSingleHeart(groups[0]);
-  }
-});
-
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.bottom >= 0
-  );
-}
-
-
-// animation
-
-
-// Scroll animations
-const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.entourage-grid .group, .timeline-entry');
-    
-    elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight * 0.8;
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (window.innerWidth > 600) return;
         
-        if (isVisible) {
-            el.classList.add('visible');
+        const isClickInsideMenu = menuList.contains(event.target);
+        const isClickOnIcon = event.target.closest('.menu-icon');
+        
+        if (!isClickInsideMenu && !isClickOnIcon) {
+            menuList.style.maxHeight = "0px";
         }
     });
-};
 
-window.addEventListener('scroll', animateOnScroll);
-window.addEventListener('load', animateOnScroll);
+    // Initialize menu on load and resize
+    window.addEventListener('load', initMenu);
+    window.addEventListener('resize', initMenu);
 
-// Initialize
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-    animateOnScroll();
-});
+    // ===== OUR STORY TYPING EFFECT =====
+    const storyText = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis fugiat eveniet repellat, aut autem, eum quod magni sed veritatis consequuntur assumenda, necessitatibus aliquam. Accusantium laudantium voluptas quidem ipsam aliquid.
+    Qui quis explicabo exercitationem amet quidem maxime illum ullam doloribus, hic nihil, dolorem sit, error blanditiis! Unde illum ex similique numquam rerum odio cupiditate, minima ipsum at molestiae temporibus molestias.`;
 
-// ===== KEEP ALL YOUR OTHER EXISTING JAVASCRIPT BELOW THIS =====
-// end of animation
+    const typedTextElement = document.getElementById('typed-text');
+    let animationStarted = false;
 
+    function typeWriter(text, i, cb) {
+        if (i < text.length) {
+            typedTextElement.innerHTML = text.substring(0, i + 1) + '<span class="cursor">|</span>';
+            setTimeout(() => typeWriter(text, i + 1, cb), Math.random() * 30 + 20);
+        } else if (cb) {
+            cb();
+        }
+    }
 
-// DRESS CODE
+    function startTypewriterAnimation() {
+        if (!animationStarted && isElementInViewport(typedTextElement)) {
+            animationStarted = true;
+            typedTextElement.style.visibility = 'visible';
+            typeWriter(storyText, 0, () => {
+                document.querySelector('.cursor').style.display = 'none';
+            });
+        }
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Simple fade-in animation
-    const dressCodeSection = document.querySelector('.dress-code');
-    const fadeInObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                fadeInObserver.unobserve(entry.target);
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
+    }
+
+    // Initialize
+    typedTextElement.style.visibility = 'hidden';
+    window.addEventListener('scroll', startTypewriterAnimation);
+    window.addEventListener('load', startTypewriterAnimation);
+
+    // ===== IMAGE CAROUSEL =====
+    const slides = document.querySelectorAll('.coverflow-slide');
+    let currentIndex = Math.floor(slides.length / 2);
+
+    function updateCoverflow() {
+        const midIndex = currentIndex;
+        const slideCount = slides.length;
+        const baseX = window.innerWidth < 600 ? 90 : 160;
+
+        slides.forEach((slide, i) => {
+            const offset = i - midIndex;
+            const absOffset = Math.abs(offset);
+
+            if (offset === 0) {
+                // Center slide
+                slide.style.transform = `translateX(0) translateZ(100px) rotateY(0deg) translateY(-50%)`;
+                slide.style.filter = 'brightness(1)';
+                slide.style.zIndex = 10;
+            } else if (offset < 0) {
+                // Left slides
+                slide.style.transform = `translateX(${offset * baseX}px) translateZ(${100 - absOffset * 100}px) rotateY(45deg) translateY(-50%)`;
+                slide.style.filter = 'brightness(0.6)';
+                slide.style.zIndex = 10 - absOffset;
+            } else {
+                // Right slides
+                slide.style.transform = `translateX(${offset * baseX}px) translateZ(${100 - absOffset * 100}px) rotateY(-45deg) translateY(-50%)`;
+                slide.style.filter = 'brightness(0.6)';
+                slide.style.zIndex = 10 - absOffset;
             }
         });
-    }, { threshold: 0.1 });
-    
-    fadeInObserver.observe(dressCodeSection);
-});
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const dressCodeSection = document.querySelector('.dress-code');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { 
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px' // Triggers when 100px from bottom of viewport
+    // Carousel fade-in effect on scroll
+    const carousel = document.querySelector('.coverflow-carousel');
+
+    function handleScrollFade() {
+        const rect = carousel.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight * 1.2 && rect.bottom > windowHeight * 0.4) {
+            carousel.classList.add('visible');
+        } else {
+            carousel.classList.remove('visible');
+        }
+    }
+
+    // Navigation functions
+    function goNext() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCoverflow();
+    }
+
+    function goPrev() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCoverflow();
+    }
+
+    // Initialize carousel
+    updateCoverflow();
+    window.addEventListener('scroll', handleScrollFade);
+    window.addEventListener('load', handleScrollFade);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') goNext();
+        else if (e.key === 'ArrowLeft') goPrev();
     });
-    
-    observer.observe(dressCodeSection);
-});
 
-// FAQ
+    // Click to navigate
+    slides.forEach((slide, index) => {
+        slide.addEventListener('click', () => {
+            currentIndex = index;
+            updateCoverflow();
+        });
+    });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const faqLeft = document.querySelector('.faq-left');
-    const faqRight = document.querySelector('.faq-right');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+    // Drag and touch support
+    let startX = 0;
+    let isDown = false;
+
+    document.querySelector('.coverflow-carousel').addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.clientX;
+    });
+
+    document.addEventListener('mouseup', () => isDown = false);
+    document.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        if (e.clientX - startX > 30) {
+            goPrev();
+            isDown = false;
+        } else if (e.clientX - startX < -30) {
+            goNext();
+            isDown = false;
+        }
+    });
+
+    // Touch events
+    let touchStartX = 0;
+    document.querySelector('.coverflow-carousel').addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    document.querySelector('.coverflow-carousel').addEventListener('touchmove', (e) => {
+        const deltaX = e.touches[0].clientX - touchStartX;
+        if (deltaX > 50) {
+            goPrev();
+            touchStartX = e.touches[0].clientX;
+        } else if (deltaX < -50) {
+            goNext();
+            touchStartX = e.touches[0].clientX;
+        }
+    });
+
+    // ===== COUNTDOWN TIMER =====
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+    const weddingDate = new Date('December 20, 2025 15:00:00').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = weddingDate - now;
+
+        if (diff < 0) {
+            // Countdown finished
+            daysEl.textContent = '0';
+            hoursEl.textContent = '0';
+            minutesEl.textContent = '0';
+            secondsEl.textContent = '0';
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        daysEl.textContent = days;
+        hoursEl.textContent = hours;
+        minutesEl.textContent = minutes;
+        secondsEl.textContent = seconds;
+    }
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+
+    // ===== PHOTO GALLERY FLIP CARDS =====
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+        
+        // Initialize random flip timers for each card
+        cards.forEach(card => {
+            const initialDelay = Math.random() * 7000 + 1000;
+            
+            setTimeout(() => {
+                // First flip
+                card.style.transform = 'rotateY(180deg)';
+                
+                // Continuous flipping
+                setInterval(() => {
+                    card.style.transform = card.style.transform === 'rotateY(180deg)' ? 
+                        'rotateY(0deg)' : 'rotateY(180deg)';
+                }, Math.random() * 4000 + 3000);
+                
+            }, initialDelay);
+        });
+        
+        // Pause animation on hover
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'none';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'transform 1s ease';
+            });
+        });
+    });
+
+    // ===== ENTOURAGE HEART ANIMATION =====
+    const groups = document.querySelectorAll('.group');
+    let currentGroupIndex = 0;
+    let heartAnimationStarted = false;
+
+    function createSingleHeart(group) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        
+        const colors = ['#e74c3c', '#e67e22', '#f1c40f', '#9b59b6', '#1abc9c', '#3498db'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        
+        heart.style.backgroundColor = color;
+        heart.style.setProperty('--heart-color', color);
+        
+        const x = Math.random() * (group.clientWidth - 20);
+        const y = Math.random() * (group.clientHeight - 18);
+        heart.style.left = `${x}px`;
+        heart.style.top = `${y}px`;
+        
+        group.appendChild(heart);
+        
+        heart.addEventListener('animationend', () => {
+            heart.remove();
+            // Move to next group after animation completes
+            currentGroupIndex = (currentGroupIndex + 1) % groups.length;
+            setTimeout(() => createSingleHeart(groups[currentGroupIndex]), 300);
+        });
+    }
+
+    // Start the sequence when scrolling
+    window.addEventListener('scroll', () => {
+        if (!heartAnimationStarted && isElementInViewport(groups[0])) {
+            heartAnimationStarted = true;
+            createSingleHeart(groups[0]);
+        }
+    });
+
+    // ===== SCROLL ANIMATIONS =====
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.entourage-grid .group, .timeline-entry, .dress-code, .faq-left, .faq-right, .rsvp-container');
+        
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight * 0.8;
+            
+            if (isVisible) {
+                el.classList.add('visible');
             }
         });
-    }, { threshold: 0.1 });
-    
-    observer.observe(faqLeft);
-    observer.observe(faqRight);
-});
+    };
 
-document.addEventListener('DOMContentLoaded', function() {
-    const rsvp = document.querySelector('.rsvp-container');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    observer.observe(rsvp);
-});
-</script>
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
 
+    // Initialize
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+        animateOnScroll();
+    });
+    </script>
 </body>
 </html>
