@@ -18,6 +18,9 @@ body {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   background: black;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 @keyframes fadeIn {
@@ -381,6 +384,7 @@ main {
   transform-style: preserve-3d;
   transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.3s ease;
   cursor: pointer;
+   max-width: 100%;
 }
 
 .coverflow-slide img {
