@@ -281,7 +281,8 @@ Thank you for your love and support — don't forget to RSVP! 💌</a>
                     <div class="timeline-content">
                         <h1>RECEPTION</h1>
                         <time>4:30 PM</time>
-                        <p>Lios Resort & Events Place <br> Apalit, Pampanga</p>
+                        <p>Lios Resort & Events Place <br> Apalit, Pampanga <a href="https://maps.app.goo.gl/24vYhboRUhfBCyKeA" target="_blank"> click me for the location</a></p>
+                        <div id="qrcode1"></div>
                     </div> 
                 </div>
 
@@ -418,8 +419,8 @@ Thank you for your love and support — don't forget to RSVP! 💌</a>
     window.addEventListener('resize', initMenu);
 
     // ===== OUR STORY TYPING EFFECT =====
-    const storyText = `Our love story started back in high school, when Wilowie was a junior and Charlie was a senior. When Charlie found out that Wilowie had a crush on him, he started making his move until he finally got the sweetest “YES!”, We stayed together through college, and in 2015, we were blessed with our precious baby. Life hasn’t always been easy - in 2020, we had to go through a long-distance phase, but our love never changed. Even with the miles between us, our hearts stayed connected.
-After three years, we’re finally together again, living in KSA with our little one and keeping our love as real and strong as ever. And now, after all these years, we’re renewing our vows!
+    const storyText = `Our love story started back in high school, when Wilowie was a junior and Charlie was a senior. When Charlie found out that Wilowie had a crush on him, he started making his move until he finally got the sweetest “YES!”, We stayed together through college, and in 2015, we were blessed with our precious baby. Life hasn’t always been easy - in 2019, we had to go through a long-distance phase, but our love never changed. Even with the miles between us, our hearts stayed connected.
+After four years, we’re finally together again, living in KSA with our little one and keeping our love as real and strong as ever. And now, after all these years, we’re renewing our vows!
 - “From young love to real love - and still counting.” ❤️`;
 
     const typedTextElement = document.getElementById('typed-text');
@@ -700,16 +701,29 @@ After three years, we’re finally together again, living in KSA with our little
         animateOnScroll();
     });
     </script>
-    <!-- QRCode.js library -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Include QRCode.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-                    <!-- Script to generate QR code -->
-                    <script>
-                        new QRCode(document.getElementById("qrcode"), {
-                        text: "https://www.google.com/maps/place/Masantol,+Pampanga/",
-                        width: 120,
-                        height: 120
-                        });
-                    </script>
+<!-- QR code containers -->
+<div id="qrcode"></div>   <!-- First QR code -->
+<div id="qrcode1"></div>  <!-- Second QR code -->
+
+<!-- Script to generate QR codes -->
+<script>
+    // First QR code
+    new QRCode(document.getElementById("qrcode"), {
+        text: "https://www.google.com/maps/place/Masantol,+Pampanga/",
+        width: 120,
+        height: 120
+    });
+
+    // Second QR code
+    new QRCode(document.getElementById("qrcode1"), {
+        text: "https://maps.app.goo.gl/24vYhboRUhfBCyKeA",
+        width: 120,
+        height: 120
+    });
+</script>
+                    
 </body>
 </html>
