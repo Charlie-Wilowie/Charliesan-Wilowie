@@ -109,7 +109,7 @@ nav {
   color: rgb(245, 245, 245);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .logo {
     max-width: 80%;
   }
@@ -156,11 +156,13 @@ nav {
 
 /* ===== HERO SECTION ===== */
 header {
-  background-image: url('img/main.jpg');
-  height: 85vh;
+  background-image: url('img/prenup/cover.jpg');
+  height: 100vh; /* full viewport height */
+  width: 100vw;  /* full viewport width */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* 'fixed' causes issues on mobile */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,6 +171,7 @@ header {
   text-shadow: 0 0 5px #000;
   animation: headerReveal 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   transform-origin: center;
+  overflow: hidden;
 }
 
 @keyframes headerReveal {
@@ -555,6 +558,7 @@ main {
   text-align: center;
   color: white;
   text-transform: uppercase;
+  
 }
 
 .entourage h5 {
