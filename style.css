@@ -1060,26 +1060,14 @@ main {
 
 .rsvp-form {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 10%;
   height: 0;
   overflow: hidden;
+  align-items: center;
+  text-align: center;
 }
 
-.rsvp-form iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-}
 
-iframe {
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -1096,3 +1084,88 @@ iframe {
     padding-bottom: 120%;
   }
 }
+
+ .slider-container-testi {
+    max-width:1000px;
+    margin:0 auto;
+  }
+
+  .view-window-testi {
+    overflow:hidden;
+    width:100%;
+  }
+
+  /* track */
+  .slider-track-testi {
+    display:flex;
+    transition: transform 0.45s ease;
+    will-change: transform;
+  }
+
+  /* each testimonial wrapper (the flex child) */
+  .testimonial-wrapper-testi {
+    flex: 0 0 33.3333%; /* default for large screens: 3 visible */
+    padding: 8px;
+  }
+
+  /* the actual card look (you asked for testimonial-card) */
+  .testimonial-card {
+  background: #0f0f0f;               /* deep black/charcoal */
+  border-radius: 20px;
+  padding: 25px 28px;
+  color: #fff;
+  box-shadow: 0 0 35px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.08); 
+  font-family: "Poppins", sans-serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:140px;
+}
+
+/* Message text */
+.testimonial-card .testimonial-message {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #e5e5e5;
+}
+
+/* Name text */
+.testimonial-card .testimonial-name {
+  margin-top: 18px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Optional gold accent line (like your RSVP title underline) */
+.testimonial-card::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #d4af37, #f3e28f);
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+  .testimonial-message { font-size:13px; color:#111827; }
+  .testimonial-name { margin-top:10px; text-align:right; font-weight:600; font-size:13px; color:#374151; }
+
+  /* responsive breakpoints */
+  @media (max-width: 900px) {
+    .testimonial-wrapper-testi { flex: 0 0 50%; } /* show 2 */
+  }
+
+  @media (max-width: 600px) {
+    .testimonial-wrapper-testi { flex: 0 0 100%; } /* show 1 */
+  }
+
+  /* optional: small pager dots container */
+  .testi-dots { display:flex; gap:6px; justify-content:center; margin-top:12px; }
+  .testi-dot {
+    width:8px; height:8px; border-radius:50%; background:#d1d5db; opacity:0.9; cursor:pointer; border:none;
+  }
+  .testi-dot.active { background:#111827; transform:scale(1.05); }

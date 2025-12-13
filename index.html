@@ -372,10 +372,30 @@ Thank you for your love and support — don't forget to RSVP! 💌</a>
                     <p>We can't wait to celebrate with you!</p>
                 </div>
                 <div class="rsvp-form">
-                    <iframe src="https://forms.gle/cdFJ6NMq1JtDnmpU6" frameborder="0" marginheight="0" marginwidth="0">></iframe>                
+                    <h4>Our RSVP is now officially closed. Thank you to everyone who responded. For those who were unable to reply on time, we kindly inform you that we have finalized the guest list and seating arrangements.</h1>             
                 </div>
             </div>
         </div>
+        <div class="slider-container-testi" id="slider-container-testi">
+  <div class="view-window-testi">
+    <div class="slider-track-testi" id="slider-track-testi">
+      <!-- 10 testimonial items -->
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Congratulations and Best Wishes, Mr and Mrs Manansala!!! ”</div><div class="testimonial-name">— Christian Paulo Aguinaldo</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Congratulations to both of you, see you on your wedding day☺️”</div><div class="testimonial-name">— Harold Angelo Sunga</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Congratulations, Chen and Charlie. Ian and I would be there to celebrate with you. ”</div><div class="testimonial-name">— AJ Fernandez</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Happy renewal of vows, Charlisan and Chen! Ten years of love, trust, and growth. May your journey continue with joy, faith, and endless blessings. Congratulations!”</div><div class="testimonial-name">—  Veronica & Rhyan Bustos  </div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Amazing results and very patient staff.”</div><div class="testimonial-name">— Jan Vincent Complido</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“See you mga inaanak♥️”</div><div class="testimonial-name">— Anais sunga</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Sorry and love you guys ♥”</div><div class="testimonial-name">— Vanessa Felipe</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“thank you for inviting i'd love to come, best wishes to the both of you tito emon and tita jhecks is always here to guide and support you,  we love you very much.”</div><div class="testimonial-name">— Raymond H. Manansala</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Thank you for inviting us! Congratulations to the whole fam ❤️”</div><div class="testimonial-name">— Arrianne, Paolo & Arkisha Hipolito</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Wishing you hapiness,love, and joy on your wedding day! Love u both! 🤍”</div><div class="testimonial-name">— Aldrin John B Garcia</div></div></div>
+      <div class="testimonial-wrapper-testi"><div class="testimonial-card"><div class="testimonial-message">“Yes I am happy and greatful to be part of your special day. ”</div><div class="testimonial-name">— Esmeralda Flores</div></div></div>
+
+</div>
+  </div>
+    <div class="testi-dots" id="testi-dots"></div>
+</div>
     </main>
 
     <!-- JavaScript -->
@@ -724,6 +744,113 @@ After four years, we’re finally together again, living in KSA with our little 
         height: 120
     });
 </script>
-                    
+          <script>
+(function () {
+  // ELEMENTS (unique IDs / classes)
+  const container = document.getElementById('slider-container-testi');
+  const track = document.getElementById('slider-track-testi');
+  const itemSelector = '.testimonial-wrapper-testi';
+  const dotsContainer = document.getElementById('testi-dots');
+
+  let items = Array.from(track.querySelectorAll(itemSelector));
+  const total = items.length;
+
+  // state
+  let index = 0;
+  let slidesToShow = calculateSlidesToShow();
+  let maxIndex = Math.max(0, total - slidesToShow);
+  let autoSlideInterval = null;
+  const AUTOPLAY_MS = 3000;
+
+  // build dots based on maxIndex pages
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    const pages = Math.max(1, maxIndex + 1);
+    for (let i = 0; i < pages; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'testi-dot' + (i === index ? ' active' : '');
+      btn.setAttribute('aria-label', 'Go to testimonials page ' + (i+1));
+      btn.addEventListener('click', () => {
+        index = i;
+        update();
+        restartAutoplay();
+      });
+      dotsContainer.appendChild(btn);
+    }
+  }
+
+  // measure and apply transform
+  function update() {
+    // refresh items in case DOM changed
+    items = Array.from(track.querySelectorAll(itemSelector));
+    const firstItem = items[0];
+    if (!firstItem) return;
+    const cardWidth = firstItem.getBoundingClientRect().width;
+    // clamp index
+    slidesToShow = calculateSlidesToShow();
+    maxIndex = Math.max(0, total - slidesToShow);
+    index = Math.min(index, maxIndex);
+    // apply transform
+    const translateX = -index * cardWidth;
+    track.style.transform = `translateX(${translateX}px)`;
+
+    // update dots active state
+    const dots = Array.from(dotsContainer.children);
+    dots.forEach((d, i) => d.classList.toggle('active', i === index));
+  }
+
+  function calculateSlidesToShow() {
+    const w = window.innerWidth;
+    if (w <= 600) return 1;
+    if (w <= 900) return 2;
+    return 3;
+  }
+
+  // next page (advance by 1)
+  function next() {
+    if (index < maxIndex) index++;
+    else index = 0; // loop to start
+    update();
+  }
+
+  // autoplay controls
+  function startAutoplay() {
+    stopAutoplay();
+    autoSlideInterval = setInterval(next, AUTOPLAY_MS);
+  }
+  function stopAutoplay() {
+    if (autoSlideInterval) { clearInterval(autoSlideInterval); autoSlideInterval = null; }
+  }
+  function restartAutoplay() { stopAutoplay(); startAutoplay(); }
+
+  // pause on hover (container)
+  container.addEventListener('mouseenter', stopAutoplay);
+  container.addEventListener('mouseleave', startAutoplay);
+
+  // resize handling: recalc slidesToShow and reposition
+  let resizeTimer = null;
+  window.addEventListener('resize', () => {
+    // debounce a little
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const newSlides = calculateSlidesToShow();
+      if (newSlides !== slidesToShow) {
+        slidesToShow = newSlides;
+        maxIndex = Math.max(0, total - slidesToShow);
+        index = Math.min(index, maxIndex);
+        buildDots();
+      }
+      update();
+    }, 80);
+  });
+
+  // initialize
+  slidesToShow = calculateSlidesToShow();
+  maxIndex = Math.max(0, total - slidesToShow);
+  buildDots();
+  update();
+  startAutoplay();
+})();
+</script>          
 </body>
 </html>
